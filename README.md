@@ -1,3 +1,28 @@
+## 对原项目进行了部分修改。
+
+1. 去掉了数据库部分，实际上只是一个文件的保存和转发，数据库只是获取了下当前有多少图片
+2. 去掉了 web 部分，原项目可以通过网页上传图片，不过也没有进一步的管理。去掉了，建议直接通过 picgo 来进行上传
+3. 原来 post 返回值是重新渲染一下网页，改成返回当前图片 url，方便 picgo 插件使用
+4. 原项目会对上传的图片名加个前缀防止重复，改成了按照时间格式的文件路径 xxxx/xx/xx/xxx.png，方便迁移和管理
+
+## 如何安装
+
+和之前不变，参考之前的项目文档
+
+## 如何上传图片
+
+使用 picgo 进行上传
+
+1. 下载安装 picgo 项目，https://github.com/Molunerfinn/PicGo
+2. 安装插件，对应插件，也是和原项目匹配的。这里也是使用我修改后的
+    
+    a. 下载插件 `git clone https://github.com/fcnaud/picgo-plugin-easypic`
+    
+    b. 插件设置->导入本地插件，选择插件目录
+        ![](Snipaste_2023-06-11_18-29-57-1.png)
+
+
+---
 
 [您可以进入项目的官方网站获取更多帮助](http://my-easy-pic-bed.ringotek.cn)
 # (For users who speak English, there is an readme.md in English edition, please roll down the page to read)
